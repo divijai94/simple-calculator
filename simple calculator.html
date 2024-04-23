@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+
+    .cal{
+        height: 180px;
+        width: 400px;
+        background-color: red;
+        margin: auto;
+        margin-top: 160px;
+        padding: 20px;
+    }
+    .button{
+        background-color: green;
+        color: white;
+        padding: 8px 12px;
+        margin: 6px 8px;
+        
+        
+        border: none;
+    }
+   
+        input{
+  &::-webkit-inner-spin-button{
+    opacity:1; 
+  } 
+}
+    
+</style>
+<body>
+    <div class="cal">
+    <form  name="entry">
+        <h2 style="text-align: center;">Simple Calculator</h2>
+       <input type="number"name="t1" placeholder="Enter  First Number">
+       <input type="number" name="t2" placeholder="Enter Second Number">
+         <br><br>
+
+        <input class=button type="button" value="Add" onclick="javascript:sum()">
+        <input class=button type="button" value="Subtract" onclick="javascript:sub()">
+        <input class=button type="button" value="Multiply" onclick="javascript:mul()">
+        <input class=button type="button" value="Divide" onclick="javascript:div()">
+
+
+    </form>
+</div>
+    <script language="javascript">
+        function sum()
+        {
+            var a,b,c;
+            a=parseInt(entry.t1.value);
+            b=parseInt(entry.t2.value);
+            c=a+b;
+            alert("The Addtion result is=:"+c);
+
+        }
+        function sub()
+        {
+            var a,b,c;
+            a=parseInt(entry.t1.value);
+            b=parseInt(entry.t2.value);
+            c=a-b;
+            alert("The Subraction result is=:"+c);
+
+        }
+        function mul()
+        {
+            var a,b,c;
+            a=parseInt(entry.t1.value);
+            b=parseInt(entry.t2.value);
+            c=a*b;
+            alert("The multiplication result is=:"+c);
+
+        }
+        function div()
+        {
+            var a,b,c;
+            a=parseInt(entry.t1.value);
+            b=parseInt(entry.t2.value);
+            c=a/b;
+            alert("The Division result is=:"+c);
+
+        }
+
+
+
+
+        
+    </script>
+</body>
+</html>
